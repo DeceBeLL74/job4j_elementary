@@ -14,11 +14,9 @@ public class Converter {
         int in = 400;
         int expected1 = 5;
         int expected2 = 6;
-        int out1 = Converter.rubleToEuro(in);
-        int out2 = Converter.rubleToDollar(in);
         int euro = Converter.rubleToEuro(value);
         int dollar = Converter.rubleToDollar(value);
-        boolean passed = (expected1 == out1) && (expected2 == out2);
+        boolean passed = (expected1 == euro) && (expected2 == dollar);
         System.out.println(value + " rubles are " + euro + " euro, or " + dollar + " dollar. Test : " + passed);
     }
 }
